@@ -1,0 +1,44 @@
+
+<h1> Car data</h1>
+<div class="flex-container">
+<div class="card-container" *ngFor="let c of cars" >
+    <div class='flippable-card' [ngClass]="{'flipped':flipped}" (click)='flipped = !flipped'>
+     
+      
+    <mat-card class = "tp-card">
+        <mat-card-header>
+           <div mat-card-avatar class = "tp-header-image"></div>
+           <mat-card-title>{{c.Name}}</mat-card-title>
+           <mat-card-subtitle>{{c.Car_Type}}</mat-card-subtitle>
+        </mat-card-header>
+        <img mat-card-image src = {{c.Photo}} alt = "Learn HTML5">
+        <mat-card-content>
+           <p>
+            {{c.Price}}
+            {{c.Location}}
+            {{c.Availability}}
+           </p>
+        </mat-card-content>
+        <mat-card-actions>
+           <button mat-button>Book</button>
+           <button mat-button>BOOK</button>
+        </mat-card-actions>
+     </mat-card>
+    
+</div>
+</div>
+</div>
+
+
+  
+
+  <!-- <div class="data" *ngFor="let c of cars "> 
+      {{c.Name}}
+     <img src= {{c.Photo}} >
+      {{c.Price}}
+      {{c.Location}}
+      {{c.Availability}}
+      {{c.Seats}}
+      {{c.Transmission}}
+      {{c.Car_Type}}
+  </div> -->

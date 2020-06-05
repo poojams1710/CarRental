@@ -1,0 +1,82 @@
+.card-container {
+
+    width: 400px;
+
+    height: 400px;
+
+    position: relative;
+
+    -webkit-perspective: 500px;
+
+    perspective: 500px;
+
+      align-items: flex-end;
+
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 1.2%;
+}
+
+
+
+.flippable-card {
+
+    width: 100%;
+
+    height: 100%;
+
+    position: absolute;
+
+    transform-style: preserve-3d;
+
+    transition: transform 1s;
+
+}
+
+
+
+.flippable-card mat-card {
+
+    shape-margin: 0rem;
+
+    display: block;
+
+    position: absolute;
+
+    width: 252px;
+
+    height: 222px;
+
+    backface-visibility: hidden;
+
+}
+
+
+
+.flippable-card .back {
+
+    background-color: aqua;
+
+    transform: rotateY( 180deg );
+
+}
+
+
+
+.flippable-card.flipped {
+
+    transform: rotateY( 180deg );
+
+}
+
+.tp-card {
+    width: 400px;
+    height: 400px;
+}
+.mat-button{
+    background-color: brown;
+}
